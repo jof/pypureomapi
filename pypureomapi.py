@@ -775,7 +775,7 @@ class Omapi:
 		@raises OmapiError:
 		@raises socket.error:
 		"""
-		msg = OmapiMessage.open("lease")
+		msg = OmapiMessage.open("host")
 		msg.obj.append(("hardware-address", pack_mac(mac)))
 		response = self.query_server(msg)
 		if response.opcode != OMAPI_OP_UPDATE:
@@ -793,7 +793,7 @@ class Omapi:
 		@raises OmapiError:
 		@raises socket.error:
 		"""
-		msg = OmapiMessage.open("lease")
+		msg = OmapiMessage.open("host")
 		msg.obj.append(("ip-address", pack_ip(ip)))
 		response = self.query_server(msg)
 		if response.opcode != OMAPI_OP_UPDATE:

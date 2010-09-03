@@ -1,3 +1,10 @@
+pypureomapi (0.1-jof1) unstable; urgency=low
+
+  * Fix lookups to look for hosts and not leases, as add_host and del_host
+  work with hosts, not leases.
+
+ -- Jonathan Lassoff <jof@thejof.com>  Tue, 24 Aug 2010 14:15:30 +0200
+
 pypureomapi (0.1-1) unstable; urgency=low
 
   * Initial release.
